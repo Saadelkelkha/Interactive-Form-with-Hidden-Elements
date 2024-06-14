@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <title>Ex1</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $(".e").hide();
+
+            var v1 = $("input").length;
+            $("body").append(v1);
+            $("#s").click(function(){
+                var v2 = "<br>" + $("#nn").val() + " " + $("#pr").val();
+                $("body").append(v2);
+            })
+        })
+        
+    </script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class='e'>HTML5</li>
+            <li>Css3</li>
+            <li class='e'>Javascript</li>
+        </ul>
+    </nav>
+    <section>
+        <form>
+            <label for="nn">Nom: </label>
+            <input type="text" id="nn"/><br>
+            <label for="pr" id='t'>Prenom: </label>
+            <input type="text" id="pr"/><br>
+            <input type="button" id="s" value="Tester"/>
+        </form>
+    </section>
+</body>
+</html>
